@@ -23,10 +23,10 @@ document.getElementById("size").oninput = function() {
     array2 = null;
   }
 
-  printit(array, array2);
+  printArrays(array, array2);
 };
 
-function printit(arr, arr2) {
+function printArrays(arr, arr2) {
   document.getElementById("generatedarray1").innerHTML = "";
   document.getElementById("generatedarray2").innerHTML = "";
 
