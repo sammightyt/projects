@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-cricket-blue-dark;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-cricket-blue;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold text-cricket-blue;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold text-cricket-blue;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed text-gray-700;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-cricket-gold hover:bg-cricket-gold-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-cricket-blue hover:bg-cricket-blue-light text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-cricket-blue text-cricket-blue hover:bg-cricket-blue hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cricket-gold focus:border-transparent transition-all;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
